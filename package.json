@@ -9,9 +9,11 @@
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "core-js": "^2.6.5",
     "vue": "^2.6.6",
     "vue-router": "^3.0.1",
+    "vuetify": "^1.5.11",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
@@ -24,6 +26,8 @@
     "chai": "^4.1.2",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
+    "moxios": "^0.4.0",
+    "nock": "^10.0.6",
     "vue-template-compiler": "^2.5.21"
   }
 }

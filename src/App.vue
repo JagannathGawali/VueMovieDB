@@ -1,12 +1,20 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/">Trending</router-link> |
+      <router-link to="/movies">Movies</router-link>|
+      <router-link :to="{ name: 'genres'}">Genres</router-link>|
+      <router-link to="/tv">TV</router-link>
     </div>
     <router-view/>
   </div>
 </template>
+<script>
+import 'vuetify/dist/vuetify.min.css'
+export default{
+  
+}
+</script>
 
 <style>
 #app {
@@ -27,5 +35,8 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+body{
+  background-color: #f2f2f2;
 }
 </style>
